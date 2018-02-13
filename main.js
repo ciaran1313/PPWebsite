@@ -1,5 +1,5 @@
 const SPLASH_HEIGHT = 750;
-const SCROLL_STATE_0_MAX = 287;
+const SCROLL_STATE_0_MAX = 350;
 const SCROLL_STATE_2_MIN = 600;
 const LINKS_BACKGROUND_COLOR_RGB_STR = "20,20,20";
 
@@ -53,6 +53,12 @@ function resetScrollState(){
 }
 
 $(document).scroll(resetScrollState);
+
+$(window).resize(function(){
+  if (scrl() <= SCROLL_STATE_0_MAX){
+    setScrollState0();
+  }
+})
 
 $(document).ready(function(){
   $("#home-link").click(setScrollState0);

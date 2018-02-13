@@ -29,8 +29,7 @@
     <div id="about" class="section">
       <h1>About</h1>
       <div id="text">
-        <p>Pterodactyl Problems is a hard-rock band from Toronto, Canada. They originally formed in 2012, and recently reunited in 2017.</p>
-        <p>Pterodactyl Problems combines singer-songwriter compositions and vocals with crushingly heavy guitar and drums, resulting in a unique hard-rock sound.</p>
+        <?php echo file_get_contents("resources/bio.html");?>
       </div>
       <img id="band-photo" align="top" src="resources/short.jpg"/>
     </div>
