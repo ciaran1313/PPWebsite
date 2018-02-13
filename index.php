@@ -2,13 +2,19 @@
 <html>
 <head>
   <title>Pterodactyl Problems</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/general.css"></link>
-  <link id="specific-stylesheet" rel="stylesheet" type="text/css"></link>
   <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
   <div id="splash">
+    <ul id=social-media-links>
+      <li><a href="https://www.facebook.com/PterodactylProblems/" class="fa fa-facebook"></a></li>
+      <li><a href="https://www.instagram.com/pterodactylproblems" class="fa fa-instagram"></a></li>
+      <li><a href="https://www.youtube.com/channel/UC26wz9wdeM-shOm8UV1fhuQ" class="fa fa-youtube"></a></li>
+      <li><a href="https://pterodactylproblems.bandcamp.com" class="fa fa-bandcamp"></a></li>
+    </ul>
     <div id="title">
       <span class="pterod-color">pterod</span><span class="actylpro-color">actylpro</span><span class="blems-color">blems</span>
     </div>

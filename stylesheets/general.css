@@ -8,11 +8,36 @@ body {
 #splash {
   background-image: url("../resources/wallpaper.jpg");
   margin-top: 0px;
-  padding-top: 250px;
-  padding-bottom: 250px;
+  height: 750px;
+  padding-top: 25px;
+}
+
+#social-media-links {
+  margin-top: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+#social-media-links li {
+  display: inline;
+  padding: 20px;
+  font-size: 20px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+#social-media-links li a {
+  text-align: center;
+  text-decoration: none;
+  color: rgba(255,255,255,0.3);
+}
+
+#social-media-links li a:hover {
+  color: rgba(255,255,255,0.8);
 }
 
 #title {
+  margin-top: 150px;
   text-align: center;
   font-size: 7vw;
   font-weight: bold;
@@ -32,8 +57,12 @@ body {
 
 #links li a {
   text-decoration: none;
-  color: white;
   font-weight: bold;
+  color: white;
+}
+
+#links li a:hover {
+  text-decoration: underline;
 }
 
 #content {

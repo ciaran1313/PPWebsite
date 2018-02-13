@@ -1,3 +1,8 @@
+const SPLASH_HEIGHT = 750;
+const SCROLL_STATE_0_MAX = 287;
+const SCROLL_STATE_2_MIN = 600;
+const LINKS_BACKGROUND_COLOR_RGB_STR = "20,20,20";
+
 ////////////////////////
 var scrollState = 0; //
 ////////////////////////////////////////////////////////////////////
@@ -17,32 +22,32 @@ function setScrollState0(){
     "position" : "relative",
     "background-color" : ""
   });
-  $("#links").offset({top: 350, left: 0});
-  $("#splash").height(150);
+  $("#links").offset({top: SCROLL_STATE_0_MAX, left: 0});
+  $("#splash").height(SPLASH_HEIGHT);
 }
 
 function setScrollState2(){
   $("#links").css({
     "position" : "fixed",
-    "background-color" : "rgba(20,20,20,1)"
+    "background-color" : `rgba(${LINKS_BACKGROUND_COLOR_RGB_STR}, 1)`
   });
   $("#links").offset({top: scrl(), left: 0});
-  $("#splash").height(150);
+  $("#splash").height(SPLASH_HEIGHT);
 }
 
 function resetScrollState(){
-  if (scrollState != 0 && scrl() <= 350){
+  if (scrollState != 0 && scrl() <= SCROLL_STATE_0_MAX){
     setScrollState0();
-  }else if (scrl() > 350 && scrl() < 600){
+  }else if (scrl() > SCROLL_STATE_0_MAX && scrl() < SCROLL_STATE_2_MIN){
     if (scrollState == 1){
-      $("#links").css("background-color", `rgba(20,20,20,${(scrl() - 350)/250})`)
+      $("#links").css("background-color", `rgba(${LINKS_BACKGROUND_COLOR_RGB_STR}, ${(scrl() - SCROLL_STATE_0_MAX)/(SCROLL_STATE_2_MIN - SCROLL_STATE_0_MAX)})`)
     }else{
       scrollState = 1;
       $("#links").css("position","fixed");
       $("#links").offset({top: scrl(), left: 0});
-      $("#splash").height(150);
+      $("#splash").height(SPLASH_HEIGHT);
     }
-  }else if (scrollState != 2 && scrl() >= 600){
+  }else if (scrollState != 2 && scrl() >= SCROLL_STATE_2_MIN){
     setScrollState2();
   }
 }
@@ -51,4 +56,5 @@ $(document).scroll(resetScrollState);
 
 $(document).ready(function(){
   $("#home-link").click(setScrollState0);
+  $("#social-media-links a").attr("target", "_blank");
 });
