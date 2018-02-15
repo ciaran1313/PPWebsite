@@ -23,7 +23,7 @@ function setScrollState0(){
     "background-color" : ""
   });
   $("#links").offset({top: SCROLL_STATE_0_MAX, left: 0});
-  $("#splash").height(SPLASH_HEIGHT);
+  $("#home").height(SPLASH_HEIGHT);
 }
 
 function setScrollState2(){
@@ -32,7 +32,7 @@ function setScrollState2(){
     "background-color" : `rgba(${LINKS_BACKGROUND_COLOR_RGB_STR}, 1)`
   });
   $("#links").offset({top: scrl(), left: 0});
-  $("#splash").height(SPLASH_HEIGHT);
+  $("#home").height(SPLASH_HEIGHT);
 }
 
 function resetScrollState(){
@@ -45,22 +45,9 @@ function resetScrollState(){
       scrollState = 1;
       $("#links").css("position","fixed");
       $("#links").offset({top: scrl(), left: 0});
-      $("#splash").height(SPLASH_HEIGHT);
+      $("#home").height(SPLASH_HEIGHT);
     }
   }else if (scrollState != 2 && scrl() >= SCROLL_STATE_2_MIN){
     setScrollState2();
   }
 }
-
-$(document).scroll(resetScrollState);
-
-$(window).resize(function(){
-  if (scrl() <= SCROLL_STATE_0_MAX){
-    setScrollState0();
-  }
-})
-
-$(document).ready(function(){
-  $("#home-link").click(setScrollState0);
-  $("#social-media-links a").attr("target", "_blank");
-});
