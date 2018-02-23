@@ -3,14 +3,15 @@
 <head>
   <title>Pterodactyl Problems</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/page.css"></link>
-  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/general.css"></link>
+  <link rel="stylesheet" type="text/css" href="stylesheets/desktop.css" id="size-specific-stylesheet"></link>
+  <!--script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  --><script src="jquery.js"></script>
+  <script type="text/javascript" src="scripts/windowsize.js"></script>
   <script type="text/javascript" src="scripts/navbar.js"></script>
-  <script type="text/javascript" src="scripts/resize.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
 </head>
 <body>
-  </div>
   <div id="home">
     <ul id=social-media-links>
       <li><a href="https://www.facebook.com/PterodactylProblems/" class="fa fa-facebook"></a></li>
@@ -21,12 +22,17 @@
     <div id="title">
       <span class="pterod-color">pterod</span><span class="actylpro-color">actylpro</span><span class="blems-color">blems</span>
     </div>
-    <ul id="links">
-      <li><a href="#home" id="home-link">Home</a></li>
-      <li><a href="#about" id="about-link">About</a></li>
-      <li><a href="#music" id="music-link">Music</a></li>
-      <li><a href="#photos" id="photos-link">Photos</a></li>
-    </ul>
+    <div id="navbar">
+      <ul id="links">
+        <li><a href="#home" id="home-link">Home</a></li>
+        <li><a href="#about" id="about-link">About</a></li>
+        <li><a href="#music" id="music-link">Music</a></li>
+        <li><a href="#photos" id="photos-link">Photos</a></li>
+      </ul>
+      <div id="dropdown-button">
+        <button class="fa fa-bars"></button>
+      </div>
+    </div>
   </div>
   <div id="content">
     <div id="about" class="section">
@@ -34,7 +40,7 @@
       <div id="text">
         <?php echo file_get_contents("resources/bio.html");?>
       </div>
-      <img id="band-photo" align="top" src="resources/short.jpg"/>
+      <img id="band-photo" align="top" src="resources/band_photo.jpg"/>
     </div>
     <div id="music" class="section">
       <h1>Music</h1>

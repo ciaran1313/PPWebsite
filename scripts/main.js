@@ -1,13 +1,17 @@
-$(document).scroll(resetScrollState);
+$(document).scroll(resetNavbarStyle);
 
 $(window).resize(function(){
-  if (scrl() <= SCROLL_STATE_0_MAX){
-    setScrollState0();
+  resetWindowSizeID();
+  if (scrl() <= NAVBAR_STYLE_0_MAX_TOPSCROLL){
+    setNavbarStyle0();
   }
-});
+}).resize();
 
 $(document).ready(function(){
-  setScrollState0();
-  $("#home-link").click(setScrollState0);
+  setNavbarStyle0();
+  $("#dropdown-button").click(function(){
+    $("#links").slideToggle();
+  });
+  $("#home-link").click(setNavbarStyle0);
   $("#social-media-links a").attr("target", "_blank");
 });
