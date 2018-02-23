@@ -32,11 +32,11 @@ body {
 #social-media-links li a {
   text-align: center;
   text-decoration: none;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.6);
 }
 
 #social-media-links li a:hover {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,1);
 }
 
 #title {
