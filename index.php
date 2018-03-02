@@ -2,11 +2,15 @@
 <html>
 <head>
   <title>Pterodactyl Problems</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="The official website for the band Pterodactyl Problems">
+  <meta name="keywords" content="Band,Music,Rock,Alt-Rock,Toronto,Ontario,Canada,Canadian">
+  <meta name="author" content="Ciaran Neely">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/general.css"></link>
   <link rel="stylesheet" type="text/css" href="stylesheets/desktop.css" id="size-specific-stylesheet"></link>
-  <!--script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  --><script src="jquery.js"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="scripts/windowsize.js"></script>
   <script type="text/javascript" src="scripts/navbar.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
