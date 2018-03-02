@@ -23,9 +23,6 @@ body {
 
 #social-media-links li {
   display: inline;
-  padding: 20px;
-  font-size: 20px;
-  width: 30px;
   border-radius: 50%;
 }
 
@@ -44,6 +41,18 @@ body {
   text-align: center;
   font-size: 8vw;
   font-weight: bold;
+}
+
+#title .pterod-color {
+  color: rgba(255,0,0,0.7);
+}
+
+#title .actylpro-color {
+  color: rgba(0,250,0,0.7);
+}
+
+#title .blems-color {
+  color: rgba(0,0,255,0.7);
 }
 
 #navbar {
@@ -101,16 +110,9 @@ body {
 }
 
 #content #about #text {
-  width: 44%;
-  min-width: 250px;
   margin-right: 5%;
   font-size: 18px;
   display: inline-block;
-}
-
-#content #about #band-photo {
-  width: 50%;
-  min-width: 230px;
 }
 
 #content #music #spreadingfear-mv{
